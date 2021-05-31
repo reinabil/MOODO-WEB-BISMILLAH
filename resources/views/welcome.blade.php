@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>Moodo Website</title>
+    <title>Moodo Website Jadi</title>
 
     <link rel="icon" href="moodo logo.png" type="image/icon type">
 </head>
