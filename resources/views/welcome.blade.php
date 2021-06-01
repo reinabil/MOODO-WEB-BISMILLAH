@@ -18,34 +18,6 @@
 </head>
 
 <body id="page-top">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#page-top">
-                <img src="moodo logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
-                Moodo
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item js-scroll-trigger">
-                        <a class="nav-link active" aria-current="page" href="#jurnal">Jurnal</a>
-                    </li>
-                    <li class="nav-item js-scroll-trigger">
-                        <a class="nav-link" href="#saran">Saran</a>
-                    </li>
-                    <li class="nav-item js-scroll-trigger">
-                        <a class="nav-link" href="#profil">Profil</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <!-- JUMBOTRON -->
     <div class="bg-light p-5 rounded-lg m-0" id="jumbotron">
         <div class="container">
