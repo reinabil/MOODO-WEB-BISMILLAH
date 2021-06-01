@@ -39,9 +39,9 @@
 
                             <a href="/notes/{{ $note->note_id }}"
                                 class="bg-blue-500 text-white font-bold px-4 py-2 text-sm uppercase rounded tracking-wider focus:outline-none hover:bg-pink-400">Detail</a>
-                            <button
+                            <a href="/notes/{{ $note->note_id }}/edit"
                                 class="bg-green-500 text-white font-bold px-4 py-2 text-sm uppercase rounded tracking-wider focus:outline-none hover:bg-pink-400">
-                                Edit</button>
+                                Edit</a>
                             <form action="/notes/{{ $note->note_id }}" method="post" class="d-inline">
                                 @csrf
                                 @method('DELETE')

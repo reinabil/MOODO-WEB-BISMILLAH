@@ -72,9 +72,11 @@ class NoteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($note_id)
     {
         //
+        $note = Note::where(['note_id' => $note_id])->get();
+        return view('note/edit', compact('note'));
     }
 
     /**
@@ -84,9 +86,21 @@ class NoteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $note_id)
     {
         //
+        $userId = Auth::user()->id;
+        Note::where('note_id', $note_id)
+            ->update(
+                [
+                    'title' => $request->title,
+                    'detail' => $request->detail,
+                    'user_id' => $userId,
+                    'mood_id' => $request->mood_id,
+                    'doa_id' => $request->doa_id,
+                ]
+            );
+        return redirect('notes');
     }
 
     /**
