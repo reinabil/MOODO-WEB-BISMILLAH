@@ -10,46 +10,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Moodo Website Jadi</title>
 
-    <link rel="icon" href="moodo logo.png" type="image/icon type">
+    <link rel="icon" href="https://drive.google.com/file/d/1ekQeQ6mXYdLMyaZ5QVcpLipapwEYjZNb/view?usp=sharing" type="image/x-icon">
 </head>
 
 <body id="page-top">
     <!-- JUMBOTRON -->
-    <div class="bg-light p-5 rounded-lg m-0" id="jumbotron">
+    <div class="bg-white p-5 rounded-lg m-0" id="jumbotron">
         <div class="container">
-            <h1 class="display-4">Start Your Day with Moodo</h1>
-            <p class="lead">Doa for Your Daily Mood</p>
+            <h1 class="display-1 text-center" style="color:#41a7a5;">Moodo</h1>
+            <p class="lead text-center">Doa for Your Daily Mood</p>
             <hr class="my-4">
-            <p>Let's make your own journal</p>
+
+            <h5 class="text-center" style="color:#1f5150;">Tulis jurnal harianmu bersama Moodo</h5>
 
             {{-- ANCHOR START jangan dihapus --}}
             @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
+                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block text-center">
                     @auth
-                        <a class="btn btn-primary btn-lg" href="{{ url('/dashboard') }}"
-                            class="text-sm text-gray-700 underline">Jadi ini namanya tombol yang kalau tombol ini ditakan
-                            akan mengarah ke halaman jurnal (kalai dia udah login sebelumnua) atau mengarah ke halaman login
-                            (kalau dia belom punya akun)</a>
+                        <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px; background-color: rgba(65, 167, 165, 1)" href="{{ url('/dashboard') }}"
+                            class="text-sm text-gray-700 underline">Yuk Mulai</a>
                     @else
-                        <a class="btn btn-primary btn-lg" href="{{ route('dashboard') }}"
-                            class="text-sm text-gray-700 underline">Jadi ini namanya tombol yang kalau tombol ini ditakan
-                            akan mengarah ke halaman jurnal (kalai dia udah login sebelumnua) atau mengarah ke halaman login
-                            (kalau dia belom punya akun)</a>
+                        <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px; background-color: rgba(65, 167, 165, 1)" href="{{ route('dashboard') }}"
+                            class="text-sm text-gray-700 underline">Yuk Mulai</a>
 
                         @if (Route::has('register'))
-                            {{-- <a class="btn btn-primary btn-lg" href="{{ route('register') }}"
-                                class="ml-4 text-sm text-gray-700 underline">Register</a> --}}
+                            {{-- <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px; background-color: rgba(65, 167, 165, 1)" href="{{ route('register') }}"
+                                class="ml-4 text-sm text-gray-700 underline">Daftar</a> --}}
                         @endif
                     @endauth
                 </div>
             @endif
 
             {{-- END jangan dihapus --}}
-        </div>
+            
+            </div>
 
 
 
