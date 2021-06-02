@@ -26,7 +26,7 @@
                     <p class="card-text">{{ $note[0]['detail'] }}</p>
                     <br><br>
 
-                    <a href="/notes" class="card-link">Backend</a>
+                    <a href="/notes" class="card-link">Back</a>
                 </div>
             </div>
         </div>
