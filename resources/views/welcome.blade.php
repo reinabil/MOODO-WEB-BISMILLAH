@@ -31,14 +31,17 @@
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block text-center">
                     @auth
-                        <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px; background-color: rgba(65, 167, 165, 1)" href="{{ url('/dashboard') }}"
+                        <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px;
+                            background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);" href="{{ url('/dashboard') }}"
                             class="text-sm text-gray-700 underline">Yuk Mulai</a>
                     @else
-                        <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px; background-color: rgba(65, 167, 165, 1)" href="{{ route('dashboard') }}"
+                        <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px; 
+                         background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);" href="{{ route('dashboard') }}"
                             class="text-sm text-gray-700 underline">Yuk Mulai</a>
 
                         @if (Route::has('register'))
-                            {{-- <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px; background-color: rgba(65, 167, 165, 1)" href="{{ route('register') }}"
+                            {{-- <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px; 
+                             background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);" href="{{ route('register') }}"
                                 class="ml-4 text-sm text-gray-700 underline">Daftar</a> --}}
                         @endif
                     @endauth
