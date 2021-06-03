@@ -174,11 +174,7 @@
         </div>
         <div class="pt-2 pb-3 space-y-1">
             <x-jet-responsive-nav-link href="{{ route('doas.index') }}" :active="request()->routeIs('doas.*')">
-<<<<<<< HEAD
                 {{ __('Daftar doa') }} ( Halaman ini gak dipake ya :D )
-=======
-                {{ __('Daftar doa') }} ( Halaman ini gak dipake ya :D. )
->>>>>>> 12f50bd375bf437b55061ff4fa6d0152a5ad5549
             </x-jet-responsive-nav-link>
         </div>
 
