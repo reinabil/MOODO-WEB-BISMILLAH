@@ -167,6 +167,16 @@
                 {{ __('Dashboard') }}
             </x-jet-responsive-nav-link>
         </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-jet-responsive-nav-link href="{{ route('notes.index') }}" :active="request()->routeIs('notes.*')">
+                {{ __('Catatan harianmu') }}
+            </x-jet-responsive-nav-link>
+        </div>
+        <div class="pt-2 pb-3 space-y-1">
+            <x-jet-responsive-nav-link href="{{ route('doas.index') }}" :active="request()->routeIs('doas.*')">
+                {{ __('Daftar doa') }} ( Halaman ini gak dipake ya :D )
+            </x-jet-responsive-nav-link>
+        </div>
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
