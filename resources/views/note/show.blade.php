@@ -13,8 +13,8 @@
     <title>@yield('title')</title>
 </head>
 
-<body>
-    <div class="container mt-2">
+<body style="background-color: #62D69F;">
+    <div class="container mt-2" >
 
         <h1>Detail Note</h1>
 

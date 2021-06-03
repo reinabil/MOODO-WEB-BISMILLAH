@@ -24,12 +24,12 @@
     <title>Edit Jurnal</title>
 </head>
 
-<body>
+<body style="background-image: linear-gradient(to bottom right, #62D69F, #41A7A5); background-repeat: no-repeat; background-size: 1500px 1500px;">
 
     {{-- BOOTSTRAP --}}
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/notes">Back</a>
+    <nav class="navbar navbar-light bg-white">
+        <div class="container">
+        <a class="btn text-white shadow-sm" style="border-radius:25px; background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);" href="/notes">Back</a>
         </div>
     </nav>
 
@@ -37,52 +37,54 @@
         <form method="POST" action="/notes/{{ $note[0]['note_id'] }}">
             @method('patch')
             @csrf
-            <!-- Title input -->
-            <div class="form-outline mb-4">
-                <input type="text" id="title" name="title" class="form-control" value="{{ $note[0]['title'] }}" />
-                <label class="form-label" for="title">Title</label>
-            </div>
-
-            <!-- Detail input -->
-            <div class="form-outline mb-4">
-                <textarea class="form-control" name="detail" id="detail" rows="4"> {{ $note[0]['detail'] }}</textarea>
-                <label class="form-label" for="detail">Detail</label>
-            </div>
-
-            {{-- Doa Input --}}
-            <div class="container">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    {{-- @foreach ($notes as $note)
-    
-                        @endforeach --}}
-                </select>
-            </div>
-
             {{-- Mood Input --}}
-            <div class="form-check-inline">
+            <label class="form-label text-white mr-4" style="font-weight: bold;" for="mood">Mood:</label>
+            <div class="form-check-inline mt-4 mb-2 text-white">
                 <input class="form-check-input" type="radio" name="mood_id" id="mood_id1" value="1">
                 <label class="form-check-label" for="mood_id1">
                     Sedih
                 </label>
             </div>
-            <div class="form-check-inline">
+            <div class="form-check-inline text-white">
                 <input class="form-check-input" type="radio" name="mood_id" id="mood_id2" value="2">
                 <label class="form-check-label" for="mood_id2">
                     Biasa aja
                 </label>
             </div>
-            <div class="form-check-inline">
+            <div class="form-check-inline text-white">
                 <input class="form-check-input" type="radio" name="mood_id" id="mood_id3" value="3">
                 <label class="form-check-label" for="mood_id3">
                     Senang
                 </label>
             </div>
+            <!-- Title input -->
+            <div class="form-outline mb-2">
+                <label class="form-label text-white" style="font-weight: bold;" for="title">Title</label>
+                <input type="text" id="title" name="title" class="form-control" value="{{ $note[0]['title'] }}" />
+            </div>
+
+            <!-- Detail input -->
+            <div class="form-outline mb-2">
+            <label class="form-label text-white" style="font-weight: bold;" for="detail">Detail</label>
+                <textarea class="form-control" name="detail" id="detail" rows="4"> {{ $note[0]['detail'] }}</textarea>
+                
+            </div>
+
+            {{-- Doa Input --}}
+            <div class="container">
+                <label class="form-label text-white" style="font-weight: bold;" for="doa">Doa terkait</label>
+                <select class="form-select" style="color: #41A7A5" aria-label="Default select example">
+                    <option selected>Pilih doa</option>
+                    {{-- @foreach ($notes as $note)
+    
+                        @endforeach --}}
+                </select>
+            </div>
             <br>
-
-
             <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-4">Update</button>
+            <div class="pull-right">
+                <button type="submit" class="btn btn-light btn-block mb-4 shadow-sm" style="border-radius: 25px; padding: 10px 25px 10px 25px; font-weight: 600; color: #41A7A5">Update</button>
+            </div>
         </form>
     </div>
 

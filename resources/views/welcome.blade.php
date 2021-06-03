@@ -25,7 +25,7 @@
             <p class="lead text-center">Doa for Your Daily Mood</p>
             <hr class="my-4" style="width:25%;margin: auto;">
 
-            <h5 class="text-center" style="color:#1f5150;">Tulis jurnal harianmu bersama Moodo oke</h5>
+            <h5 class="text-center" style="color:#1f5150;">Tulis jurnal harianmu bersama Moodo</h5>
 
             {{-- ANCHOR START jangan dihapus --}}
             @if (Route::has('login'))
