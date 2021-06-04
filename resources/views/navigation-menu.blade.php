@@ -23,7 +23,7 @@
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('doas.index') }}" :active="request()->routeIs('doas.*')">
-                        {{ __('Daftar Doa') }} (halaman ini engga dipake ya :D )
+                        {{ __('Daftar Doa') }}
                     </x-jet-nav-link>
                 </div>
             </div>
@@ -174,7 +174,7 @@
         </div>
         <div class="pt-2 pb-3 space-y-1">
             <x-jet-responsive-nav-link href="{{ route('doas.index') }}" :active="request()->routeIs('doas.*')">
-                {{ __('Daftar doa') }} ( Halaman ini gak dipake ya :D )
+                {{ __('Daftar doa') }}
             </x-jet-responsive-nav-link>
         </div>
 

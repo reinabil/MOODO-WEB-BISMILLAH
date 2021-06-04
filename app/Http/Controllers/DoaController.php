@@ -46,9 +46,11 @@ class DoaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($doa_id)
     {
         //
+        $doa = Doa::where(['doa_id' => $doa_id])->get();
+        return view('doa/show', compact('doa'));
     }
 
     /**

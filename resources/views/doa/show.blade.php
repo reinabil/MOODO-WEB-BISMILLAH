@@ -1,10 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-@php
-<!-- $doa_id = $note[0]['doa_id'] - 1;-->
-@endphp
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -17,8 +13,9 @@
     <title>@yield('title')</title>
 </head>
 
-<body style="background-image: linear-gradient(to bottom right, #62D69F, #41A7A5); background-repeat: no-repeat; background-size: 1500px 1500px;">
-<!-- NAVBAR -->
+<body
+    style="background-image: linear-gradient(to bottom right, #62D69F, #41A7A5); background-repeat: no-repeat; background-size: 1500px 1500px;">
+    <!-- NAVBAR -->
     <nav class="navbar navbar-light bg-white">
         <div class="container">
             <a class="btn text-white shadow-sm"
@@ -33,12 +30,12 @@
         <div class="container mt-4">
             <div class="card shadow" style="border-radius: 15px;">
                 <div class="card-body">
-                    <h5 class="card-title">Judul Doa</h5>
-                    <h6 class="card-subtitle my-3 text-muted">Lafaz Doa</h6>
-                    <h6 class="card-subtitle mb-2" style="color: #41A7A5">Latin Doa</h6>
-                    <p class="card-text">Arti Doa</p>
+                    <h5 class="card-title">{{ $doa[0]['judul'] }}</h5>
+                    <h6 class="card-subtitle my-3 text-muted">{{ $doa[0]['lafaz'] }}</h6>
+                    <h6 class="card-subtitle mb-2" style="color: #41A7A5">{{ $doa[0]['latin'] }}</h6>
+                    <p class="card-text">{{ $doa[0]['arti'] }}</p>
                     <hr class="my-2">
-                    <p class="card-text">Riwayat Doa</p>
+                    <p class="card-text">{{ $doa[0]['tentang'] }}</p>
                 </div>
             </div>
         </div>
