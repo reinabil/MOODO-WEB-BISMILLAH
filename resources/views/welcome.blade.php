@@ -14,7 +14,8 @@
 
     <title>Moodo Website Jadi</title>
 
-    <link rel="icon" href="https://drive.google.com/file/d/1ekQeQ6mXYdLMyaZ5QVcpLipapwEYjZNb/view?usp=sharing" type="image/x-icon">
+    <link rel="icon" href="https://drive.google.com/file/d/1ekQeQ6mXYdLMyaZ5QVcpLipapwEYjZNb/view?usp=sharing"
+        type="image/x-icon">
 </head>
 
 <body id="page-top">
@@ -32,12 +33,12 @@
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block text-center">
                     @auth
                         <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px;
-                            background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);" href="{{ url('/dashboard') }}"
-                            class="text-sm text-gray-700 underline">Yuk Mulai</a>
+                                    background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);"
+                            href="{{ route('notes.index') }}" class="text-sm text-gray-700 underline">Yuk Mulai</a>
                     @else
                         <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px; 
-                         background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);" href="{{ route('dashboard') }}"
-                            class="text-sm text-gray-700 underline">Yuk Mulai</a>
+                                    background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);"
+                            href="{{ route('notes.index') }}" class="text-sm text-gray-700 underline">Yuk Mulai</a>
 
                         @if (Route::has('register'))
                             {{-- <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px; 
@@ -49,8 +50,8 @@
             @endif
 
             {{-- END jangan dihapus --}}
-            
-            </div>
+
+        </div>
 
 
 
