@@ -24,12 +24,15 @@
     <title>Edit Jurnal</title>
 </head>
 
-<body style="background-image: linear-gradient(to bottom right, #62D69F, #41A7A5); background-repeat: no-repeat; background-size: 1500px 1500px;">
+<body
+    style="background-image: linear-gradient(to bottom right, #62D69F, #41A7A5); background-repeat: no-repeat; background-size: 1500px 1500px;">
 
     {{-- BOOTSTRAP --}}
     <nav class="navbar navbar-light bg-white">
         <div class="container">
-        <a class="btn text-white shadow-sm" style="border-radius:25px; background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);" href="/notes">Back</a>
+            <a class="btn text-white shadow-sm"
+                style="border-radius:25px; background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);"
+                href="/notes">Back</a>
         </div>
     </nav>
 
@@ -65,25 +68,28 @@
 
             <!-- Detail input -->
             <div class="form-outline mb-2">
-            <label class="form-label text-white" style="font-weight: bold;" for="detail">Detail</label>
+                <label class="form-label text-white" style="font-weight: bold;" for="detail">Detail</label>
                 <textarea class="form-control" name="detail" id="detail" rows="4"> {{ $note[0]['detail'] }}</textarea>
-                
             </div>
 
             {{-- Doa Input --}}
             <div class="container">
                 <label class="form-label text-white" style="font-weight: bold;" for="doa">Doa terkait</label>
-                <select class="form-select" style="color: #41A7A5" aria-label="Default select example">
-                    <option selected>Pilih doa</option>
-                    {{-- @foreach ($notes as $note)
-    
-                        @endforeach --}}
+                <select class="form-select" style="color: #41A7A5" aria-label="Default select example" name="doa_id"
+                    required>
+                    <option value="" selected disabled hidden>Pilih doa</option>
+                    @foreach ($doas as $doa)
+                        <option value="{{ $doa->doa_id }}">
+                            {{ $doa->judul }}
+                        </option>
+                    @endforeach
                 </select>
             </div>
             <br>
             <!-- Submit button -->
             <div class="pull-right">
-                <button type="submit" class="btn btn-light btn-block mb-4 shadow-sm" style="border-radius: 25px; padding: 10px 25px 10px 25px; font-weight: 600; color: #41A7A5">Update</button>
+                <button type="submit" class="btn btn-light btn-block mb-4 shadow-sm"
+                    style="border-radius: 25px; padding: 10px 25px 10px 25px; font-weight: 600; color: #41A7A5">Update</button>
             </div>
         </form>
     </div>

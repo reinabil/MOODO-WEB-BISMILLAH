@@ -1,6 +1,10 @@
 <!doctype html>
 <html lang="en">
 
+@php
+$doa_id = $note[0]['doa_id'] - 1;
+@endphp
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -14,7 +18,7 @@
 </head>
 
 <body style="background-color: #62D69F;">
-    <div class="container mt-2" >
+    <div class="container mt-2">
 
         <h1>Detail Note</h1>
 
@@ -27,6 +31,20 @@
                     <br><br>
 
                     <a href="/notes" class="card-link">Back</a>
+                </div>
+            </div>
+        </div>
+
+        {{-- Doa --}}
+        <h1>Doa Terkait</h1>
+        <div class="container mt-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ $doas[$doa_id]['judul'] }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ $doas[$doa_id]['lafaz'] }}</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ $doas[$doa_id]['latin'] }}</h6>
+                    <p class="card-text">{{ $doas[$doa_id]['arti'] }}</p>
+                    <p class="card-text">{{ $doas[$doa_id]['tentang'] }}</p>
                 </div>
             </div>
         </div>

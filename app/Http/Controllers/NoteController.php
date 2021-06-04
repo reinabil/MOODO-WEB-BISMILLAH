@@ -48,12 +48,13 @@ class NoteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($note_id)
+    public function show($note_id, Doa $doas)
     {
         //
         // $result = Note::where('note_id', '=', 30);
+        $doas = Doa::all();
         $note = Note::where(['note_id' => $note_id])->get();
-        return view('note/show', compact('note'));
+        return view('note/show', compact('note', 'doas'));
     }
 
     /**
@@ -62,11 +63,12 @@ class NoteController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($note_id)
+    public function edit($note_id, Doa $doas)
     {
         //
+        $doas = Doa::all();
         $note = Note::where(['note_id' => $note_id])->get();
-        return view('note/edit', compact('note'));
+        return view('note/edit', compact('note', 'doas'));
     }
 
     /**

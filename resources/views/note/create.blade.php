@@ -77,7 +77,9 @@
             {{-- Doa Input --}}
             <div class="container">
                 <label class="form-label text-white" style="font-weight: bold;" for="doa">Doa terkait</label>
-                <select class="form-select" style="color: #41A7A5" aria-label="Default select example" name="doa_id">
+                <select class="form-select" style="color: #41A7A5" aria-label="Default select example" name="doa_id"
+                    required>
+                    <option value="" selected disabled hidden>Pilih doa</option>
                     @foreach ($doas as $doa)
                         <option value="{{ $doa->doa_id }}">
                             {{ $doa->judul }}
