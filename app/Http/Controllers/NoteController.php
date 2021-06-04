@@ -15,12 +15,13 @@ class NoteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Doa $doas)
     {
         //
         $userId = Auth::user()->id;
+        $doas = Doa::all();
         $notes = Note::where(['user_id' => $userId])->get();
-        return view('note/index', compact('notes'));
+        return view('note/index', compact('notes', 'doas'));
     }
 
     public function create(Doa $doas)
