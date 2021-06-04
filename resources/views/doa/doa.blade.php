@@ -2,7 +2,7 @@
 <html lang="en">
 
 @php
-$doa_id = $note[0]['doa_id'] - 1;
+<!-- $doa_id = $note[0]['doa_id'] - 1;-->
 @endphp
 
 <head>
@@ -23,34 +23,22 @@ $doa_id = $note[0]['doa_id'] - 1;
         <div class="container">
             <a class="btn text-white shadow-sm"
                 style="border-radius:25px; background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);"
-                href="/notes">Back</a>
+                href="/doas">Back</a>
         </div>
     </nav>
     <div class="container mt-2">
 
-        <h3 class="text-center text-white mt-4">Detail Jurnal</h3>
-
-        <div class="container my-4">
-            <div class="card shadow" style="border-radius: 15px;">
-                <div class="card-body">
-                    <h5 class="card-title">{{ $note[0]['title'] }}</h5>
-                    <h6 class="card-subtitle mb-2 small text-muted" style="font-weight: 300">{{ $note[0]['updated_at'] }}</h6>
-                    <p class="card-text">{{ $note[0]['detail'] }}</p>
-                </div>
-            </div>
-        </div>
-
         {{-- Doa --}}
-        <h3 class="text-center text-white mt-4">Doa Terkait</h3>
+        <h3 class="text-center text-white mt-4">Detail Doa</h3>
         <div class="container mt-4">
             <div class="card shadow" style="border-radius: 15px;">
                 <div class="card-body">
-                    <h5 class="card-title">{{ $doas[$doa_id]['judul'] }}</h5>
-                    <h6 class="card-subtitle my-3 text-muted">{{ $doas[$doa_id]['lafaz'] }}</h6>
-                    <h6 class="card-subtitle mb-2" style="color: #41A7A5">{{ $doas[$doa_id]['latin'] }}</h6>
-                    <p class="card-text">{{ $doas[$doa_id]['arti'] }}</p>
+                    <h5 class="card-title">Judul Doa</h5>
+                    <h6 class="card-subtitle my-3 text-muted">Lafaz Doa</h6>
+                    <h6 class="card-subtitle mb-2" style="color: #41A7A5">Latin Doa</h6>
+                    <p class="card-text">Arti Doa</p>
                     <hr class="my-2">
-                    <p class="card-text">{{ $doas[$doa_id]['tentang'] }}</p>
+                    <p class="card-text">Riwayat Doa</p>
                 </div>
             </div>
         </div>

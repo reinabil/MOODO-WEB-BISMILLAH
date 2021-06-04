@@ -4,9 +4,9 @@
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">Daftar Doa
         </h2>
         <table class="w-full text-left rounded-lg mt-10">
-            <thead>
+            <thead class="text-white" style="background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);>
                 <tr class="text-gray-800 border border-b-0">
-                    <th class="px-4 py-3">#</th>
+                    <th class="px-4 py-3">No.</th>
                     <th class="px-4 py-3">Judul</th>
                 </tr>
             </thead>
