@@ -24,48 +24,16 @@
     <title>Tambah Jurnal</title>
 </head>
 
-<body style="background-image: linear-gradient(to bottom right, #62D69F, #41A7A5); background-repeat: no-repeat; background-size: 1500px 1500px;">
-
-    {{-- <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    <form method="POST" action="/notes">
-                        @csrf
-                        <div class="input-group mb-3">
-                            <label class="form-label" for="title">Title <span class="text-red-500">*</span></label>
-                            <input type="text" class="input-group-text" name="title" id="title" value="" required>
-                        </div>
-
-                        <div class="mb-8">
-                            <label class="text-xl text-gray-600">Detail <span class="text-red-500">*</span></label>
-                            <textarea name="detail" class="border-2 border-gray-500">
-
-                            </textarea>
-                        </div>
-
-                        <div class="flex p-1">
-
-                            <button role="submit" class="btn btn-primary" required>Submit</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
-
-    <script>
-        CKEDITOR.replace('detail');
-
-    </script> --}}
+<body
+    style="background-image: linear-gradient(to bottom right, #62D69F, #41A7A5); background-repeat: no-repeat; background-size: 1500px 1500px;">
 
     {{-- BOOTSTRAP --}}
     <nav class="navbar navbar-light bg-white">
         <div class="container">
-            <a class="btn text-white shadow-sm" style="border-radius:25px; background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);" href="/notes">Back</a>
-            
+            <a class="btn text-white shadow-sm"
+                style="border-radius:25px; background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);"
+                href="/notes">Back</a>
+
         </div>
     </nav>
 
@@ -96,30 +64,32 @@
             <div class="form-outline mb-2">
                 <label class="form-label text-white" style="font-weight: bold;" for="title">Judul</label>
                 <input type="text" id="title" name="title" class="form-control" />
-                
+
             </div>
-            
+
             <!-- Detail input -->
             <div class="form-outline mb-2">
                 <label class="form-label text-white" style="font-weight: bold;" for="detail">Detail</label>
                 <textarea class="form-control" name="detail" id="detail" rows="4"></textarea>
-                
+
             </div>
 
             {{-- Doa Input --}}
             <div class="container">
                 <label class="form-label text-white" style="font-weight: bold;" for="doa">Doa terkait</label>
-                <select class="form-select" style="color: #41A7A5" aria-label="Default select example">
-                    <option selected>Pilih doa</option>
-                    {{-- @foreach ($notes as $note)
-
-                    @endforeach --}}
+                <select class="form-select" style="color: #41A7A5" aria-label="Default select example" name="doa_id">
+                    @foreach ($doas as $doa)
+                        <option value="{{ $doa->doa_id }}">
+                            {{ $doa->judul }}
+                        </option>
+                    @endforeach
                 </select>
             </div>
             <br>
             <!-- Submit button -->
             <div class="pull-right">
-                <button type="submit" class="btn btn-light btn-block mb-4 shadow-sm" style="border-radius: 25px; padding: 10px 25px 10px 25px; font-weight: 600; color: #41A7A5">Send</button>
+                <button type="submit" class="btn btn-light btn-block mb-4 shadow-sm"
+                    style="border-radius: 25px; padding: 10px 25px 10px 25px; font-weight: 600; color: #41A7A5">Send</button>
             </div>
         </form>
     </div>
