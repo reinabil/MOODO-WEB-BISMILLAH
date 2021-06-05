@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< HEAD <title>Moodo Register</title>
     <x-guest-layout>
         <x-jet-authentication-card>
@@ -63,3 +64,5 @@
             </form>
         </x-jet-authentication-card>
     </x-guest-layout>
+=======
+>>>>>>> 682ec22fc57a80011b216c1f928d67c42d11a861

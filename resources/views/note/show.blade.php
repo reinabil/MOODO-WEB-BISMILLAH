@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 
@@ -76,5 +77,7 @@ $doa_id = $note[0]['doa_id'] - 1;
 </body>
 
 </html>
+=======
+>>>>>>> 682ec22fc57a80011b216c1f928d67c42d11a861
 =======
 >>>>>>> 682ec22fc57a80011b216c1f928d67c42d11a861

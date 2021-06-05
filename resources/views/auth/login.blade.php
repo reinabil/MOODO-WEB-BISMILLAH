@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <title>Moodo Login</title>
 <x-guest-layout>
 
@@ -49,5 +50,7 @@
         </form>
     </x-jet-authentication-card>
 </x-guest-layout>
+=======
+>>>>>>> 682ec22fc57a80011b216c1f928d67c42d11a861
 =======
 >>>>>>> 682ec22fc57a80011b216c1f928d67c42d11a861
