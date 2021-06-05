@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -20,7 +21,7 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
+    return view('note/index');
 })->name('dashboard');
 
 
@@ -28,3 +29,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('notes', NoteController::class);
 });
 Route::resource('doas', DoaController::class);
+=======
+>>>>>>> 682ec22fc57a80011b216c1f928d67c42d11a861

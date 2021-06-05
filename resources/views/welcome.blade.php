@@ -12,10 +12,9 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Moodo Website Jadi</title>
+    <title>Moodo Welcome !</title>
 
-    <link rel="icon" href="https://drive.google.com/file/d/1ekQeQ6mXYdLMyaZ5QVcpLipapwEYjZNb/view?usp=sharing"
-        type="image/x-icon">
+    <link rel="icon" href="{{ asset('img/logo.png') }}" type="image/x-icon">
 </head>
 
 <body id="page-top">
@@ -33,11 +32,11 @@
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block text-center">
                     @auth
                         <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px;
-                                    background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);"
+                                                    background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);"
                             href="{{ route('notes.index') }}" class="text-sm text-gray-700 underline">Yuk Mulai</a>
                     @else
                         <a class="btn text-white shadow" style="border-radius: 25px; padding: 10px 25px 10px 25px; 
-                                    background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);"
+                                                    background-image: linear-gradient(to bottom right, #62D69F, #41A7A5);"
                             href="{{ route('notes.index') }}" class="text-sm text-gray-700 underline">Yuk Mulai</a>
 
                         @if (Route::has('register'))
@@ -70,3 +69,5 @@
 </body>
 
 </html>
+=======
+>>>>>>> 682ec22fc57a80011b216c1f928d67c42d11a861

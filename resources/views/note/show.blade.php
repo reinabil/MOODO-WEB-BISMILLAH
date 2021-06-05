@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 
@@ -14,11 +15,12 @@ $doa_id = $note[0]['doa_id'] - 1;
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>@yield('title')</title>
+    <title>Detail Jurnal</title>
 </head>
 
-<body style="background-image: linear-gradient(to bottom right, #62D69F, #41A7A5); background-repeat: no-repeat; background-size: 1500px 1500px;">
-<!-- NAVBAR -->
+<body
+    style="background-image: linear-gradient(to bottom right, #62D69F, #41A7A5); background-repeat: no-repeat; background-size: 1500px 1500px;">
+    <!-- NAVBAR -->
     <nav class="navbar navbar-light bg-white">
         <div class="container">
             <a class="btn text-white shadow-sm"
@@ -34,7 +36,8 @@ $doa_id = $note[0]['doa_id'] - 1;
             <div class="card shadow" style="border-radius: 15px;">
                 <div class="card-body">
                     <h5 class="card-title">{{ $note[0]['title'] }}</h5>
-                    <h6 class="card-subtitle mb-2 small text-muted" style="font-weight: 300">{{ $note[0]['updated_at'] }}</h6>
+                    <h6 class="card-subtitle mb-2 small text-muted" style="font-weight: 300">
+                        {{ $note[0]['updated_at'] }}</h6>
                     <p class="card-text">{{ $note[0]['detail'] }}</p>
                 </div>
             </div>
@@ -73,3 +76,5 @@ $doa_id = $note[0]['doa_id'] - 1;
 </body>
 
 </html>
+=======
+>>>>>>> 682ec22fc57a80011b216c1f928d67c42d11a861

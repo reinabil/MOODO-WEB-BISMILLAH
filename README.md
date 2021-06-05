@@ -1,62 +1,249 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Moodo Web
+> Pelengkap Moodo-App "Jurnal for your daily mood"
+    
+## Laporan Akhir Projek
+- KOM 331 | Rekayasa Perangkat Lunak | P1
+- Kelompok 4
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Dibimbing oleh :
+- Qory Khairunnisa
+- Indah Puspita
 
-## About Laravel
+## Tim Pengembang Moodo
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Nama</th>
+            <th>Nim</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Hana Tasnim</td>
+            <td>G64190018</td>
+            <td>Front-end Developer</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nabil Raihan Alfarizi</td>
+            <td>G64190034</td>
+            <td>Back-end Developer</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Renny Atikasari</td>
+            <td>G64190040</td>
+            <td>UI/UX Researcher</td>
+        </tr>
+                <tr>
+            <td>4</td>
+            <td>Dwayne Cameron S</td>
+            <td>G64190085</td>
+            <td>Quality Assurance</td>
+        </tr>
+    </tbody>
+</table>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Selayang Pandang
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<img src="https://i.imgur.com/93M2Wzl.png" width="316" height="87.91" />
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Moodo Web "Jurnal for your daily mood" adalah website yang berisikan fitur jurnal. Memungkinkan user untuk menulis jurnal harian sesuai mood dan terhubung dengan doa yang berkaitan sesuai mood yang dirasakan user. 
+## Latar Belakang
+Selain mengembangkan aplikasi yang berisikan doa/zikir harian, tim moodo juga mengembangkan moodo website yang memuat fitur jurnal harian.
+Berdasarkan riset dari tim moodo, selain dengan berdoa, journaling juga merupakan salah satu kegiatan yang dapat membuat mood menjadi lebih baik. Harapan kami selaku tim pengembang, semoga dengan adanya website moodo, user mampu lebih mengekpresikan diri melalui jurnal. 
 
-## Learning Laravel
+## Tujuan
+- Memberikan ruang tulis kepada user untuk membuat jurnal harian
+- Memberikan rekomendasi doa sesuai dengan jurnal yang ditulis user berdasarkan mood 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Ruang Lingkup
+### Minimum requirement
+<table>
+    <thead>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Operating System</td>
+            <td colspan=3 style="text-align:center">Andorid Kitkat (4.4 SDK 19) or above</td>
+        </tr>
+        <tr>
+            <td>Processor</td>
+            <td colspan=3 style="text-align:center">arm64-v8a Processor</td>
+        </tr>
+        <tr>
+            <td>Memory</td>
+            <td colspan=3 style="text-align:center">1 GB or above</td>
+        </tr>
+        <tr>
+            <td>Screen Resolution</td>
+            <td colspan=3 style="text-align:center">480x800 or above</td>
+        </tr>
+        <tr>
+            <td>Internet Access</td>
+            <td colspan=3 style="text-align:center">Required</td>
+        </tr>
+    </tbody>
+</table>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Spesifikasi Teknis Pengembangan
+<table>
+    <thead>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Software</td>
+            <td colspan=3 style="text-align:center">VS Code, Android Studio</td>
+        </tr>
+        <tr>
+            <td>Hardware</td>
+            <td colspan=3 style="text-align:center">Intel i5-6200U @2.30 GHz ; 8 GB DDR4 RAM : NVIDIA GeForce 930M</td>
+        </tr>
+        <tr>
+            <td>Tech Stack</td>
+            <td colspan=3 style="text-align:center">Flutter Framework with packages from https://pub.dev</td>
+        </tr>
+    </tbody>
+</table>
 
-## Laravel Sponsors
+## User Analysis (user profil)
+Target dari website moodo adalah semua kalangan yang ingin menuliskan jurnal harian. Ada banyak platform jurnal yang sudah umum digunakan, namun dalam website moodo, tim moodo mengembangkan sebuah fitur menulis jurnal yang berkaitan dengan mood  sehingga user mampu melihat record mood yang dirasakan selama menuliskan jurnal harian. Tidak lupa juga fitur pada moodo-web memungkinkan agar user dapat melihat doa yang terkait dengan jurnal yang ditulis. Doa dilengkapi dengan arab, latin, arti dan tentang doa. 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### User story
+- Sebagai seorang insan, saya ingin menulis jurnal harian  untuk mendokumentasikan peristiwa/perasaan saya ke dalam tulisan
+- Sebagai seorang muslim, saya ingin apa yang saya tulis tetap sesuai dengan syariat silam
+- Sebagai seorang remaja, saya ingin jurnal yang saya tulis bisa disesuaikan dengan mood yang saya rasakan sehingga saya bisa melihat record jurnal harian yang pernah saya tulis sebelumnya
 
-### Premium Partners
+## Hasil dan Pembahasan
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+- ERD
+    atau Entity Relationship Diagram adalah suatu bentuk diagram yang menjelaskan hubungan antar objek-objek data yang mempunyai hubungan antar relasi. Berikut adalah ilustrasi ERD pada perangkat lunak Moodo.
 
-## Contributing
+    <img src="https://trello-attachments.s3.amazonaws.com/60bb200eb6e68d6497665302/1188x892/252a7a5d4fd8c587a55352e1d21f3afe/Inkedchrome_qIh8AijRSt_LI.jpg" width="500" height="350" />
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Class Diagram
+    berfungsi untuk menggambarkan struktur sebuah sistem pemrograman. Class diagram banyak memperhatikan hubungan antarkelas dan penjelasan detail tiap kelas dalam pemodelan desain (dalam logical view) dari suatu sistem. Berikut adalah ilustrasi Class Diagram pada perangkat lunak Moodo.
 
-## Code of Conduct
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb205755445348b444362c/dce1087ae693dcf706ddfc66870383fe/chrome_AJnnkPzU92.png" width="500" height="250" />
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- Arsitektur Diagram
+    Diagram arsitektur adalah bahasa gambar yang digunakan dalam bidang arsitektur untuk menerangkan konsep, prinsip, anasir, dan komponen, termasuk cara kerja maupun petunjuk penggunaannya. Berikut adalah ilustrasi arsitektur diagram pada perangkat lunak Moodo.
+    
+     <img src="https://trello-attachments.s3.amazonaws.com/6033234ba21fd86aafb964bc/523x645/f47b0310bc0d2aba4063d8186471eaed/IMG-20210426-WA0000.jpg" width="500" height="550" />
+### Fungsi Utama 
+1. Register & Log in
+       
+    Pada fitur Register & Log in, user dapat melakukan registrasi akun kemudian log in untuk dapat menulis jurnal pada moodo-web
+    
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c3cad91ec221ef5e4004a8920ca18ada/1._register.png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1e35e9b8ea1559941f4e2316aa3e02b8/2._login.png" width="700" height="330" />
 
-## Security Vulnerabilities
+2. Home Page
+        
+    Pada home page, user dapat melihat ada dua fitur yang disediakan. Yaitu fitur jurnal dan doa. Fitur jurnal bisa digunakan user untuk melihat jurnal yang telah dibuat ataupun menuliskan jurnal, sedangkan fitur doa bisa diguakan user untuk melihat doa-doa yang dilengkapi dengan detail doa, seperti: arab, latin, arti dan tentang doa.
+    
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c52a3e5945124d5b5054d0c504d91e65/3._home.png" width="700" height="330" /> 
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+3. Catatan Harianmu
+        
+    Pada fitur catatan harianmu, user dapat menambahkan jurnal dengan menuliskan catatan harian pada fitur ini. Fitur catatan harianmu juga dilengkapi dengan view detail jurnal, sehingga user dapat melihat kembali jurnal yang pernah ditulis. Fitur ini juga memungkinka user untuk dapat memilih doa yang terkait dengan jurnal yang dibuat. 
+    
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/18eb7e62aff76b15e483c38ebf74945d/6._tambah_jurnal.png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c2ed08936c9510706c3808eb3833de50/4._detail_jurnal_(1).png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/66dcb204824d4e748eb0895852472ffc/4._detail_jurnal_(2).png" width="700" height="330" /> 
 
-## License
+4. Setting profil
+        
+    Fitur setting profile difungsikan untuk user dapat mengatur profile secara up to date. Pada fitur ini, user dapat menautkan informasi profil (username, email user), update password, browser sessions, dan user juga bisa menghapus akunnya secara mandiri. 
+    
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/d884c466f966f6e7cabff6757686640d/8._edit_profil_(1).png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/8ea2620bef569883b984d9952988aa01/8._edit_profil_(2).png" width="700" height="330" /> 
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+5. Detail Doa
+
+    Fitur detail doa memuat doa-doa terkait mood, dilengkapi dengan tulisan arab, latin, arti, dan tentang doa. 
+
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1978ac0160f5d0c4a9e547f97d652019/9._page_doa.png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/6b475ea2d4dd79aa5630edd9a5090cde/10._detail_doa.png" width="700" height="330" /> 
+
+
+### Fungsi CRUD
+CRUD adalah singkatan dari create, read, update, and delete yang merupakan fungsi-fungsi utama yang diimplementasikan dalam aplikasi database.
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>CRUD</th>
+            <th>Fungsi</th>
+            <th>Fitur</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Create</td>
+            <td>Menambahkan jurnal</td>
+            <td>Catatan harianmu</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Read</td>
+            <td>Membaca jurnal & Membaca doa</td>
+            <td>Catatan harianmu & Detail doa</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Update</td>
+            <td>Update jurnal & Update Profile</td>
+            <td>Catatan harianmu & Profile</td>
+        </tr>
+                <tr>
+            <td>4</td>
+            <td>Delete</td>
+            <td>Menghapus jurnal & Menghapus akun</td>
+            <td>Catatan harianmu & Profile</td>
+        </tr>
+    </tbody>
+</table>
+
+#### Detail CRUD perangkat lunak moodo :
+1. Create
+        
+    Fungsi CRUD yang pertama adalah create. Fungsi ini memungkinkan user membuat record baru dalam database.
+
+    Pada perangkat lunak moodo-web, fitur catatan harianmu termasuk ke dalam fungsi create dikarenakan user dapat menuliskan jurnal pada page catatan harianmu. 
+
+2. Read
+        
+    Fungsi read hampir mirip dengan fungsi search. Fungsi ini memungkinkan user untuk mencari dan mengambil data tertentu dalam tabel dan membaca nilainya.
+    
+    Pada perangkat lunak moodo-web, fitur catatan harianmu dan daftar doa termasuk ke dalam fungsi read dikarenakan user bisa membaca kembali jurnal harian yang telah ditulis pada fitur catatan harianmu. User juga bisa membaca doa-doa yang tersedia pada pada page daftar doa.
+
+3. Update
+        
+    Fungsi update digunakan untuk memodifikasi record yang telah tersimpan di database.
+
+    Pada perangkat lunak moodo-web, fitur catatan harianmu dan profile termasuk ke dalam fungsi update dikarenakan user dapat melakukan editing terhadap jurnal yang sudah ditulis sebelumnya. User juga dapat meng-update profile secara mendiri.
+
+4. Delete
+
+    Ketika ada record atau data yang tidak lagi dibutuhkan dalam database, fungsi CRUD yang digunakan adalah fungsi delete. Fungsi ini dapat digunakan untuk menghapus data tersebut.
+
+    Pada perangkat lunak moodo-web, fitur catatan harianmu dan profile termasuk ke dalam fungsi delete dikarenakan user dapat menghapus jurnal yang telah ditulis. User juga dapat menghapus akun moodo-web apabila sudah tidak diperlukan.
+
+## Hasil Implementasi
+Dilampirkan screenshot hasil pengembangan perangkat lunak moodo-web
+
+<img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c3cad91ec221ef5e4004a8920ca18ada/1._register.png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1e35e9b8ea1559941f4e2316aa3e02b8/2._login.png" width="700" height="330" />   <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c52a3e5945124d5b5054d0c504d91e65/3._home.png" width="700" height="330" />  <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/18eb7e62aff76b15e483c38ebf74945d/6._tambah_jurnal.png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c2ed08936c9510706c3808eb3833de50/4._detail_jurnal_(1).png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/66dcb204824d4e748eb0895852472ffc/4._detail_jurnal_(2).png" width="700" height="330" /> 
+ <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/d884c466f966f6e7cabff6757686640d/8._edit_profil_(1).png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/8ea2620bef569883b984d9952988aa01/8._edit_profil_(2).png" width="700" height="330" /> 
+<img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1978ac0160f5d0c4a9e547f97d652019/9._page_doa.png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/6b475ea2d4dd79aa5630edd9a5090cde/10._detail_doa.png" width="700" height="330" /> 
+
+## Projek Documentation 
+- [Klik di sini untuk melihat dokumentasi github](http://ipb.link/moodo-github)
+- [Klik di sini untuk melihat dokumentasi trello](http://ipb.link/moodo-trello)
+- [Klik di sini untuk melihat dokumentasi Google-site](http://ipb.link/moodo-site)
+
+## Saran untuk pengembangan selanjutnya
+
+
+
+

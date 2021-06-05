@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 
@@ -10,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>@yield('title')</title>
+    <title>{{ $doa[0]['judul'] }}</title>
 </head>
 
 <body
@@ -58,3 +59,5 @@
 </body>
 
 </html>
+=======
+>>>>>>> 682ec22fc57a80011b216c1f928d67c42d11a861
