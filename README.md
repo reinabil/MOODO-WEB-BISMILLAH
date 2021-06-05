@@ -36,7 +36,7 @@
             <td>3</td>
             <td>Renny Atikasari</td>
             <td>G64190040</td>
-            <td></td>
+            <td>UI/UX Researcher</td>
         </tr>
                 <tr>
             <td>4</td>
