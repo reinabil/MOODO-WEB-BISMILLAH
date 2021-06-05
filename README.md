@@ -118,15 +118,7 @@ Target dari website moodo adalah semua kalangan yang ingin menuliskan jurnal har
 - Sebagai seorang remaja, saya ingin jurnal yang saya tulis bisa disesuaikan dengan mood yang saya rasakan sehingga saya bisa melihat record jurnal harian yang pernah saya tulis sebelumnya
 
 ## Hasil dan Pembahasan
-- Use Case Diagram
-    merupakan model diagram UML yang digunakan untuk menggambarkan requirement fungsional yang diharapkan dari sebuah sistem.
 
-    <img src="https://trello-attachments.s3.amazonaws.com/6045a23af4435585403a4210/683x507/dbb413e39aad8a6a9e4ff23525a555ff/Use_Case_Diagram_Moodo.PNG.png" width="500" height="350" />
-
-- Activity Diagram
-    merupakan diagram yang dapat memodelkan proses-proses yang terjadi pada sebuah sistem. Runtutan proses dari suatu sistem digambarkan secara vertikal. Activity diagram merupakan pengembangan dari Use Case yang memiliki alur aktivitas. Berikut adalah ilustrasi diagram untuk aktivitas perangkat lunak Moodo.
-
-    <img src="https://trello-attachments.s3.amazonaws.com/60b997d5bd18720830f0ce5a/673x627/55956cd7e2e4f241d0861220c93439a6/Screen_Shot_2021-06-04_at_10.12.04.png" width="500" height="350" />
 - ERD
     atau Entity Relationship Diagram adalah suatu bentuk diagram yang menjelaskan hubungan antar objek-objek data yang mempunyai hubungan antar relasi. Berikut adalah ilustrasi ERD pada perangkat lunak Moodo.
 
@@ -242,8 +234,8 @@ CRUD adalah singkatan dari create, read, update, and delete yang merupakan fungs
 Dilampirkan screenshot hasil pengembangan perangkat lunak moodo-web
 
 <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c3cad91ec221ef5e4004a8920ca18ada/1._register.png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1e35e9b8ea1559941f4e2316aa3e02b8/2._login.png" width="700" height="330" />   <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c52a3e5945124d5b5054d0c504d91e65/3._home.png" width="700" height="330" />  <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/18eb7e62aff76b15e483c38ebf74945d/6._tambah_jurnal.png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c2ed08936c9510706c3808eb3833de50/4._detail_jurnal_(1).png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/66dcb204824d4e748eb0895852472ffc/4._detail_jurnal_(2).png" width="700" height="330" /> 
- <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/d884c466f966f6e7cabff6757686640d/8._edit_profil_(1).png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/8ea2620bef569883b984d9952988aa01/8._edit_profil_(2).png" width="700" height="330" /> 
-<img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1978ac0160f5d0c4a9e547f97d652019/9._page_doa.png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/6b475ea2d4dd79aa5630edd9a5090cde/10._detail_doa.png" width="700" height="330" /> 
+ <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/d884c466f966f6e7cabff6757686640d/8._edit_profil_(1).png" width="700" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/8ea2620bef569883b984d9952988aa01/8._edit_profil_(2).png" width="840" height="330" /> 
+<img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1978ac0160f5d0c4a9e547f97d652019/9._page_doa.png" width="840" height="330" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/6b475ea2d4dd79aa5630edd9a5090cde/10._detail_doa.png" width="840" height="330" /> 
 
 ## Projek Documentation 
 - [Klik di sini untuk melihat dokumentasi github](http://ipb.link/moodo-github)
