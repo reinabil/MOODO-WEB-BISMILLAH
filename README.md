@@ -1,14 +1,7 @@
 # Moodo Web
-<img src="https://drive.google.com/file/d/1Q2IeAmbRsdxnEGzwlGDPHI05JDE23lJH/view?usp=sharing" width="500" height="250" />
-
-> Moodo adalah aplikasi yang bisa merekomendasikan doa/zikir sesuai syariat islam kepada user sesuai mood yang sedang dirasakan.
-
-## Download Aplikasi
-Aplikasi sudah tersedia pada Play Store atau bisa langsung
-
-[Klik di sini untuk mengunduh aplikasi Moodo untuk android](https://ipb.link/get-moodo)
-
-# Laporan Akhir Projek
+> Pelengkap Moodo-App "Jurnal for your daily mood"
+    
+## Laporan Akhir Projek
 - KOM 331 | Rekayasa Perangkat Lunak | P1
 - Kelompok 4
 
@@ -57,18 +50,15 @@ Aplikasi sudah tersedia pada Play Store atau bisa langsung
 ## Selayang Pandang
 
 <img src="https://i.imgur.com/93M2Wzl.png" width="316" height="87.91" />
-Moodo "Du'a for your daily mood" adalah aplikasi yang bisa merekomendasikan doa/zikir sesuai syariat islam kepada user sesuai mood yang sedang dirasakan. Aplikasi ini memuat lebih dari 250 doa/zikir yang disesuaikan dengan mood user (sedih, normal, senang). Aplikasi Moodo juga dilengkapi dengan detail doa (Arab, latin, arti doa, dan sumber doa).
 
+Moodo Web "Jurnal for your daily mood" adalah website yang berisikan fitur jurnal. Memungkinkan user untuk menulis jurnal harian sesuai mood dan terhubung dengan doa yang berkaitan sesuai mood yang dirasakan user. 
 ## Latar Belakang
-Setelah satu tahun pandemi Covid-19, tim moodo menemukan beberapa permasalahan yang cukup serius yang dialami beberapa teman kami. Berikut hasil survei yang kami dapatkan :
-- Covid-19 mengganggu psikologi. Dikarenakan pandemi Covid-19 ternyata menyebabkan masyarakat gelisah akibat karantina yang dilakukan.
-- Hafalan doa masih sedikit. Berdasarkan data yang kami dapatkan dari tirto.id menyatakan bahwa 68% masyarakat Indonesia belum memiliki literasi yang baik dalam menghafal dan melafalkan doa-doa harian.
+Selain mengembangkan aplikasi yang berisikan doa/zikir harian, tim moodo juga mengembangkan moodo website yang memuat fitur jurnal harian.
+Berdasarkan riset dari tim moodo, selain dengan berdoa, journaling juga merupakan salah satu kegiatan yang dapat membuat mood menjadi lebih baik. Harapan kami selaku tim pengembang, semoga dengan adanya website moodo, user mampu lebih mengekpresikan diri melalui jurnal. 
 
 ## Tujuan
-- Memudahkan pengguna mencari doa sesuai syariat Islam
-- Mengurangi tingkat stress akibat pandemi Covid-19 dengan pendekatan religius
-- Membiasakan kaum muslimin untuk membaca doa di setiap kondisi
-- Mempermudah pengguna untuk menghafal doa-doa harian
+- Memberikan ruang tulis kepada user untuk membuat jurnal harian
+- Memberikan rekomendasi doa sesuai dengan jurnal yang ditulis user berdasarkan mood 
 
 ## Ruang Lingkup
 ### Minimum requirement
@@ -94,7 +84,7 @@ Setelah satu tahun pandemi Covid-19, tim moodo menemukan beberapa permasalahan y
         </tr>
         <tr>
             <td>Internet Access</td>
-            <td colspan=3 style="text-align:center">Not required</td>
+            <td colspan=3 style="text-align:center">Required</td>
         </tr>
     </tbody>
 </table>
@@ -119,11 +109,13 @@ Setelah satu tahun pandemi Covid-19, tim moodo menemukan beberapa permasalahan y
     </tbody>
 </table>
 
-## User Analysis
-User Analisis adalah sarana untuk menentukan karakteristik pengguna yang akan mempengaruhi pengembangan sistem perangkat lunak. 
-- User stories adalah bagian dari user analisis yang memuat penjelasan singkat dengan bahasa sederhana yang ditulis dari sudut pandang pengguna. 
+## User Analysis (user profil)
+Target dari website moodo adalah semua kalangan yang ingin menuliskan jurnal harian. Ada banyak platform jurnal yang sudah umum digunakan, namun dalam website moodo, tim moodo mengembangkan sebuah fitur menulis jurnal yang berkaitan dengan mood  sehingga user mampu melihat record mood yang dirasakan selama menuliskan jurnal harian. Tidak lupa juga fitur pada moodo-web memungkinkan agar user dapat melihat doa yang terkait dengan jurnal yang ditulis. Doa dilengkapi dengan arab, latin, arti dan tentang doa. 
 
-[Klik di sini untuk melihat user stories moodo](ipb.link/userstories-moodo)
+### User story
+- Sebagai seorang insan, saya ingin menulis jurnal harian  untuk mendokumentasikan peristiwa/perasaan saya ke dalam tulisan
+- Sebagai seorang muslim, saya ingin apa yang saya tulis tetap sesuai dengan syariat silam
+- Sebagai seorang remaja, saya ingin jurnal yang saya tulis bisa disesuaikan dengan mood yang saya rasakan sehingga saya bisa melihat record jurnal harian yang pernah saya tulis sebelumnya
 
 ## Hasil dan Pembahasan
 - Use Case Diagram
@@ -138,43 +130,48 @@ User Analisis adalah sarana untuk menentukan karakteristik pengguna yang akan me
 - ERD
     atau Entity Relationship Diagram adalah suatu bentuk diagram yang menjelaskan hubungan antar objek-objek data yang mempunyai hubungan antar relasi. Berikut adalah ilustrasi ERD pada perangkat lunak Moodo.
 
-    <img src="https://trello-attachments.s3.amazonaws.com/60b9a553bd87d723ffbb0769/587x507/32f91a355195e7dc33e9488082d84164/Screen_Shot_2021-06-04_at_10.59.36.png" width="500" height="350" />
+    <img src="https://trello-attachments.s3.amazonaws.com/60bb200eb6e68d6497665302/1188x892/252a7a5d4fd8c587a55352e1d21f3afe/Inkedchrome_qIh8AijRSt_LI.jpg" width="500" height="350" />
 
 - Class Diagram
     berfungsi untuk menggambarkan struktur sebuah sistem pemrograman. Class diagram banyak memperhatikan hubungan antarkelas dan penjelasan detail tiap kelas dalam pemodelan desain (dalam logical view) dari suatu sistem. Berikut adalah ilustrasi Class Diagram pada perangkat lunak Moodo.
 
-    <img src="https://trello-attachments.s3.amazonaws.com/60b9a5a2a235771ea2a1b862/425x261/5f39510056776002cae2f7d15bd8c6c3/Screen_Shot_2021-06-04_at_11.01.05.png" width="500" height="250" />
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb205755445348b444362c/dce1087ae693dcf706ddfc66870383fe/chrome_AJnnkPzU92.png" width="500" height="250" />
 
 - Arsitektur Diagram
     Diagram arsitektur adalah bahasa gambar yang digunakan dalam bidang arsitektur untuk menerangkan konsep, prinsip, anasir, dan komponen, termasuk cara kerja maupun petunjuk penggunaannya. Berikut adalah ilustrasi arsitektur diagram pada perangkat lunak Moodo.
     
      <img src="https://trello-attachments.s3.amazonaws.com/6033234ba21fd86aafb964bc/523x645/f47b0310bc0d2aba4063d8186471eaed/IMG-20210426-WA0000.jpg" width="500" height="550" />
 ### Fungsi Utama 
-1. Welcome Page & Home Page Moodo
+1. Register & Log in
        
-    Pada fitur welcome page terdapat sambutan salam "Assalamualaikum" dengan melampirkan penanggalan kalender masehi maupun hijriah. Pada welcome page juga user disambut dengan tampilan "Doa of the Day" yang akan terus berganti setiap kali membuka aplikasi Moodo.
-       
-    Kemudian pada fitur home page, user bisa memilih doa berdasarkan mood yang sudah disediakan dengan bentuk tiga icon sesuai dengan mood (sedih, normal, senang).
+    Pada fitur Register & Log in, user dapat melakukan registrasi akun kemudian log in untuk dapat menulis jurnal pada moodo-web
     
-    <img src="https://i.imgur.com/cczXAHf.png" width="270" height="570" /> <img src="https://i.imgur.com/F3ebRwH.png" width="270" height="570" />
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c3cad91ec221ef5e4004a8920ca18ada/1._register.png" width="500" height="270" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1e35e9b8ea1559941f4e2316aa3e02b8/2._login.png" width="500" height="270" />
 
-2. Pencarian Doa by Keyword
+2. Home Page
         
-    Pada fitur pencarian doa berdasarkan keyword, user dapat memasukkan kata kunci sesuai dengan doa yang ingin dicari pada kolom search doa. Pada page doa ini, terdapat 250 lebih pilihan doa dilengkapi dengan arab, latin, arti dan juga tentang doa tersebut. 
+    Pada home page, user dapat melihat ada dua fitur yang disediakan. Yaitu fitur jurnal dan doa. Fitur jurnal bisa digunakan user untuk melihat jurnal yang telah dibuat ataupun menuliskan jurnal, sedangkan fitur doa bisa diguakan user untuk melihat doa-doa yang dilengkapi dengan detail doa, seperti: arab, latin, arti dan tentang doa.
     
-    <img src="https://i.imgur.com/cfG3Iqt.png" width="270" height="570" /> <img src="https://i.imgur.com/vwaVKTD.png" width="270" height="570" />
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c52a3e5945124d5b5054d0c504d91e65/3._home.png" width="500" height="270" /> 
 
-3. Doa Favorite
+3. Catatan Harianmu
         
-    Pada fitur favorit, user bisa menambahkan doa yang disukai/sedang ingin dibaca secara berulang pada fitur favorit. Sehingga doa akan secara otomatis dimasukkan pada page favorit yang dapat memudahkan user ketika mencari doa tersebut. 
+    Pada fitur catatan harianmu, user dapat menambahkan jurnal dengan menuliskan catatan harian pada fitur ini. Fitur catatan harianmu juga dilengkapi dengan view detail jurnal, sehingga user dapat melihat kembali jurnal yang pernah ditulis. Fitur ini juga memungkinka user untuk dapat memilih doa yang terkait dengan jurnal yang dibuat. 
     
-    <img src="https://i.imgur.com/kJbreAr.png" width="270" height="570" /> <img src="https://trello-attachments.s3.amazonaws.com/60ba3b80da16c536004be599/375x792/e5185beb75cd18110027be72f37e0a5c/qemu-system-x86_64_g9D4cIXL1d.png" width="270" height="570" /> 
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/18eb7e62aff76b15e483c38ebf74945d/6._tambah_jurnal.png" width="500" height="270" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c2ed08936c9510706c3808eb3833de50/4._detail_jurnal_(1).png" width="500" height="270" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/66dcb204824d4e748eb0895852472ffc/4._detail_jurnal_(2).png" width="500" height="270" /> 
 
-4. Zikir Pagi & Petang
+4. Setting profil
         
-    Fitur zikir pagi & petang merupakan panduan zikir pagi & petang yang dimaksudkan agar mempermudah user ketika ingin berzikir dimanapun dan kapanpun karena dikemas dalam aplikasi mobile dan tidak memerlukan akses internet. Fitur ini juga di desain dengan menarik sehingga mampu membuat user merasa nyaman ketika mengikuti panduan zikir pagi & petang pada aplikasi moodo. 
+    Fitur setting profile difungsikan untuk user dapat mengatur profile secara up to date. Pada fitur ini, user dapat menautkan informasi profil (username, email user), update password, browser sessions, dan user juga bisa menghapus akunnya secara mandiri. 
     
-    <img src="https://i.imgur.com/G2G4Fbg.png" width="270" height="570" /><img src="https://trello-attachments.s3.amazonaws.com/60ba3bff0ceeec5caa64a489/375x792/2662203225d97911e38e0b9ffc1fe0a2/qemu-system-x86_64_xvtR28H8w0.png" width="270" height="570" /><img src="https://trello-attachments.s3.amazonaws.com/60ba3bdafbb1e322c7ef7aa4/375x792/e2c59a1d5ff4cd3c595e2fa7bf7fcbd1/qemu-system-x86_64_RhsEte0IIr.png" width="270" height="570" /> 
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/d884c466f966f6e7cabff6757686640d/8._edit_profil_(1).png" width="500" height="270" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/8ea2620bef569883b984d9952988aa01/8._edit_profil_(2).png" width="500" height="270" /> 
+
+5. Detail Doa
+
+    Fitur detail doa memuat doa-doa terkait mood, dilengkapi dengan tulisan arab, latin, arti, dan tentang doa. 
+
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1978ac0160f5d0c4a9e547f97d652019/9._page_doa.png" width="500" height="270" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/6b475ea2d4dd79aa5630edd9a5090cde/10._detail_doa.png" width="500" height="270" /> 
+
 
 ### Fungsi CRUD
 CRUD adalah singkatan dari create, read, update, and delete yang merupakan fungsi-fungsi utama yang diimplementasikan dalam aplikasi database.
@@ -192,26 +189,26 @@ CRUD adalah singkatan dari create, read, update, and delete yang merupakan fungs
         <tr>
             <td>1</td>
             <td>Create</td>
-            <td>Menambahkan doa</td>
-            <td>Favorit</td>
+            <td>Menambahkan jurnal</td>
+            <td>Catatan harianmu</td>
         </tr>
         <tr>
             <td>2</td>
             <td>Read</td>
-            <td>Membaca doa</td>
-            <td>Search doa</td>
+            <td>Membaca jurnal & Membaca doa</td>
+            <td>Catatan harianmu & Detail doa</td>
         </tr>
         <tr>
             <td>3</td>
             <td>Update</td>
-            <td>Meng-update doa</td>
-            <td>Favorit</td>
+            <td>Update jurnal & Update Profile</td>
+            <td>Catatan harianmu & Profile</td>
         </tr>
                 <tr>
             <td>4</td>
             <td>Delete</td>
-            <td>Menghapus doa</td>
-            <td>Favorit</td>
+            <td>Menghapus jurnal & Menghapus akun</td>
+            <td>Catatan harianmu & Profile</td>
         </tr>
     </tbody>
 </table>
@@ -221,43 +218,38 @@ CRUD adalah singkatan dari create, read, update, and delete yang merupakan fungs
         
     Fungsi CRUD yang pertama adalah create. Fungsi ini memungkinkan user membuat record baru dalam database.
 
-    Pada perangkat lunak moodo, fitur favorit termasuk ke dalam fungsi create dikarenakan user dapat menambahkan daftar (record) doa-doa yang akan dimasukkan ke dalam page favorit.
+    Pada perangkat lunak moodo-web, fitur catatan harianmu termasuk ke dalam fungsi create dikarenakan user dapat menuliskan jurnal pada page catatan harianmu. 
 
 2. Read
         
     Fungsi read hampir mirip dengan fungsi search. Fungsi ini memungkinkan user untuk mencari dan mengambil data tertentu dalam tabel dan membaca nilainya.
     
-    Pada perangkat lunak moodo, fitur search doa by mood dan fitur search doa by keyword termasuk ke dalam fungsi read dikarenakan user dapat mencari doa yang ingin dibaca. Fitur ini juga memuat lebih dari 250 doa dilengkapi dengan arab, latin, arti dan tentang doa.
+    Pada perangkat lunak moodo-web, fitur catatan harianmu dan daftar doa termasuk ke dalam fungsi read dikarenakan user bisa membaca kembali jurnal harian yang telah ditulis pada fitur catatan harianmu. User juga bisa membaca doa-doa yang tersedia pada pada page daftar doa.
 
 3. Update
         
     Fungsi update digunakan untuk memodifikasi record yang telah tersimpan di database.
 
-    Pada perangkat lunak moodo, fitur favorit termasuk ke dalam fungsi update dikarenakan user mampu untuk mengubah record (menambahkan atau menghapus) list doa pada page favorit.
+    Pada perangkat lunak moodo-web, fitur catatan harianmu dan profile termasuk ke dalam fungsi update dikarenakan user dapat melakukan editing terhadap jurnal yang sudah ditulis sebelumnya. User juga dapat meng-update profile secara mendiri.
 
 4. Delete
 
     Ketika ada record atau data yang tidak lagi dibutuhkan dalam database, fungsi CRUD yang digunakan adalah fungsi delete. Fungsi ini dapat digunakan untuk menghapus data tersebut.
 
-    Pada perangkat lunak moodo, fitur favorit termasuk ke dalam fungsi delete dikarenakan user dapat menghapus atau menghilangkan daftar doa yang sudah tidak diinginkan (sudah tidak ingin dibaca atau sudah selesai dibaca) pada page favorit.
-
+    Pada perangkat lunak moodo-web, fitur catatan harianmu dan profile termasuk ke dalam fungsi delete dikarenakan user dapat menghapus jurnal yang telah ditulis. User juga dapat menghapus akun moodo-web apabila sudah tidak diperlukan.
 
 ## Hasil Implementasi
-Dilampirkan screenshot hasil pengembangan perangkat lunak moodo
+Dilampirkan screenshot hasil pengembangan perangkat lunak moodo-web
 
-<img src="https://i.imgur.com/cczXAHf.png" width="270" height="570" /> <img src="https://i.imgur.com/F3ebRwH.png" width="270" height="570" /> <img src="https://i.imgur.com/cfG3Iqt.png" width="270" height="570" /> <img src="https://i.imgur.com/G2G4Fbg.png" width="270" height="570" /> <img src="https://i.imgur.com/kJbreAr.png" width="270" height="570" /> <img src="https://i.imgur.com/vwaVKTD.png" width="270" height="570" />
-
-## Testing (Test Case)
-- Positive Cases
-- Negative Cases
+<img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c3cad91ec221ef5e4004a8920ca18ada/1._register.png" width="500" height="270" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1e35e9b8ea1559941f4e2316aa3e02b8/2._login.png" width="500" height="270" />   <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c52a3e5945124d5b5054d0c504d91e65/3._home.png" width="500" height="270" />  <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/18eb7e62aff76b15e483c38ebf74945d/6._tambah_jurnal.png" width="500" height="270" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c2ed08936c9510706c3808eb3833de50/4._detail_jurnal_(1).png" width="500" height="270" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/66dcb204824d4e748eb0895852472ffc/4._detail_jurnal_(2).png" width="500" height="270" /> 
+ <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/d884c466f966f6e7cabff6757686640d/8._edit_profil_(1).png" width="500" height="270" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/8ea2620bef569883b984d9952988aa01/8._edit_profil_(2).png" width="500" height="270" /> 
+<img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1978ac0160f5d0c4a9e547f97d652019/9._page_doa.png" width="500" height="270" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/6b475ea2d4dd79aa5630edd9a5090cde/10._detail_doa.png" width="500" height="270" /> 
 
 ## Projek Documentation 
 - [Klik di sini untuk melihat dokumentasi github](http://ipb.link/moodo-github)
 - [Klik di sini untuk melihat dokumentasi trello](http://ipb.link/moodo-trello)
 - [Klik di sini untuk melihat dokumentasi Google-site](http://ipb.link/moodo-site)
 
-## Notes
-Tim moodo juga mengembangkan website moodo dengan fitur untuk membuat jurnal yang berkaitan dengan doa. Selengkapnya akan dibahas pada laporan akhir moodo-web. (https://github.com/reinabil/MOODO-WEB-BISMILLAH.git)
 ## Saran untuk pengembangan selanjutnya
 
 
