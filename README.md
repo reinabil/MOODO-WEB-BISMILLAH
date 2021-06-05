@@ -146,7 +146,7 @@ Target dari website moodo adalah semua kalangan yang ingin menuliskan jurnal har
        
     Pada fitur Register & Log in, user dapat melakukan registrasi akun kemudian log in untuk dapat menulis jurnal pada moodo-web
     
-    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c3cad91ec221ef5e4004a8920ca18ada/1._register.png" width="800" height="300" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1e35e9b8ea1559941f4e2316aa3e02b8/2._login.png" width="800" height="300" />
+    <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/c3cad91ec221ef5e4004a8920ca18ada/1._register.png" width="700" height="300" /> <img src="https://trello-attachments.s3.amazonaws.com/6020b019834f9a761fda2244/60bb21ddfae3452ace097cb1/1e35e9b8ea1559941f4e2316aa3e02b8/2._login.png" width="700" height="300" />
 
 2. Home Page
         
